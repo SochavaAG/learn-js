@@ -18,6 +18,7 @@ const arrExample = [1,0,74,'string',null,undefined,false,true,() => {},{},[1,2,3
 // 1. forEach – перебор элементов массива
 // C forEach нельзя выйти досрочно, в отличии от цикла for() {} в котором с помощью break можно выйти из него
 // https://youtu.be/ZcLGyy0YFwk?t=79
+// https://youtu.be/GULFKAX0nxY?t=1912
 const arrNum1 = [1,2,3,4,5];
 
 const newArray1 = arrNum1.forEach((agItem1, agIndex1, agArr1) => {
@@ -63,6 +64,7 @@ arrExample1.forEach((agItem1) => {
 
 // 2. map – перебор элементов массива и возврат нового массива на основе текущего
 // https://youtu.be/ZcLGyy0YFwk?t=233
+// https://youtu.be/GULFKAX0nxY?t=1510
 const arrNum2 = [1,2,3,4,5];
 
 const newArray2 = arrNum2.map((agItem2, agIndex2, agArr2) => {
@@ -97,6 +99,7 @@ console.log(newResult2);
 // reduce подходит для свертки массива
 // https://youtu.be/ZcLGyy0YFwk?t=379
 // https://youtu.be/KqbnxtLOeZk?t=43
+// https://youtu.be/GULFKAX0nxY?t=1988
 const arrNum3 = [1,2,3,4,5];
 
 const something = arrNum3.reduce((acc3, agItem3, agIndex3, agArr3) => {
@@ -182,6 +185,7 @@ console.log(newSum34);
 // 4 find – позволяет найти элемент по условию и сразу его возращает
 // ищет до первого элемента, который возвращает true
 // https://youtu.be/ZcLGyy0YFwk?t=757
+// https://youtu.be/GULFKAX0nxY?t=1072
 const arrNum4 = [1,2,3,4,5];
 
 const agEl4 = arrNum4.find((agItem4, agIndex4, agArr4) => {
@@ -208,6 +212,7 @@ console.log(agFindResult4);
 // 5 findIndex – позволяет найти индекс по условию и сразу его возращает
 // ищет до первого индекса, который возвращает true
 // https://youtu.be/ZcLGyy0YFwk?t=879
+// https://youtu.be/GULFKAX0nxY?t=1072
 const arrNum5 = [1,2,3,4,5];
 
 const agIndex5 = arrNum5.findIndex((agItem5, agIndex5, agArr5) => {
@@ -233,6 +238,7 @@ console.log(agFindResult5);
 
 // 6 filter – возвращает новый массив по истенному условию
 // https://youtu.be/ZcLGyy0YFwk?t=942
+// https://youtu.be/GULFKAX0nxY?t=1218
 const arrNum6 = [1,2,3,4,5];
 
 const agFilterArr6 = arrNum6.filter((agItem6, agIndex6, agArr6) => {
@@ -262,6 +268,7 @@ console.log(agFindResult6);
 // Метод push мутирует исходный массив (изменяет) и возвращает новую длину массива
 // Мутирование в функциональном программированию стараются избегать
 // https://youtu.be/ZcLGyy0YFwk?t=1084
+// https://youtu.be/GULFKAX0nxY?t=435
 const arrNum7 = [1,2,3,4,5];
 
 const newLengthArr71 = arrNum7.push(10);
@@ -291,6 +298,7 @@ console.log(newLengthArr72);
 
 // 8. unshift – вставляет элементы в начало массива и изменяет его, тоесть мутирует, и возвращает новую длину массива
 // https://youtu.be/ZcLGyy0YFwk?t=1196
+// https://youtu.be/GULFKAX0nxY?t=492
 const arrNum8 = [1,2,3,4,5];
 
 const newLengthArr8 = arrNum8.unshift(77, 14, 6, 777);
@@ -308,6 +316,7 @@ console.log(newLengthArr8);
 // 9. pop – удаляет элемент из конца массива и одновременно возвращает удаленный элемент из массива,
 // и мутирует этот массив
 // https://youtu.be/ZcLGyy0YFwk?t=1287
+// https://youtu.be/GULFKAX0nxY?t=482
 const arrNum9 = [1,2,3,4,5];
 
 const lastEl9 = arrNum9.pop();
@@ -325,6 +334,7 @@ console.log(lastEl9);
 // 10. shift – удаляет элемент из начала массива и одновременно возвращает удаленный элемент из массива,
 // и мутирует этот массив
 // https://youtu.be/ZcLGyy0YFwk?t=1381
+// https://youtu.be/GULFKAX0nxY?t=458
 const arrNum10 = [1,2,3,4,5];
 
 const firstEl10 = arrNum10.shift();
@@ -334,6 +344,7 @@ console.log(arrNum10, firstEl10);
 // [2,3,4,5] 1
 //-------------------------------------------------------------------------
 
+// https://youtu.be/GULFKAX0nxY?t=517
 // Методы push, pop работаю быстро, так как не нужно перестраивать массиив
 // Методы unshift, shift работают медленно, так как нужно перестраивать массив
 // ########################################################################
@@ -341,6 +352,7 @@ console.log(arrNum10, firstEl10);
 // 11. concat – создает новый массив с переданными значениями в конце
 // Исходный массив не мутируется arrNum11 в отличии от метода push
 // https://youtu.be/ZcLGyy0YFwk?t=1525
+// https://youtu.be/GULFKAX0nxY?t=922
 const arrNum11 = [1,2,3,4,5];
 
 const newArr111 = arrNum11.concat(11,12,13,14,15);
@@ -356,6 +368,7 @@ console.log(newArr111, newArr112);
 // 12. join – позволяетсоеденить массив в строку
 // https://youtu.be/ZcLGyy0YFwk?t=1639
 // https://youtu.be/xEFeiKULMKs?t=824
+// https://youtu.be/GULFKAX0nxY?t=1594
 const str12 = 'qwewqdvdfaqwt';
 const strArr12 = str12.split('');
 
@@ -372,11 +385,12 @@ console.log(strArr12);
 
 // 13. sort – позволяет отсортировать массив, и новый массив промутирует
 // https://youtu.be/ZcLGyy0YFwk?t=1778
+// https://youtu.be/GULFKAX0nxY?t=1281
 const arrNum131 = [11,2,-93,4,0];
 
 const newArr131 = arrNum131.sort();
 
-// сортировка не такая как хотелось бы
+// сортировка не такая как хотелось бы, так как элементы сортируются как строки
 console.log(newArr131);
 // результат:
 // [-93,0,11,2,4]
@@ -419,6 +433,7 @@ console.log(arrNum132);
 
 // 14. isArray – позволяет проверить, массив ли это
 // https://youtu.be/ZcLGyy0YFwk?t=2195
+// https://youtu.be/GULFKAX0nxY?t=1705
 const arrNum14 = [1,2,3,4,5];
 
 Array.isArray(arrNum14);
@@ -431,6 +446,7 @@ console.log(Array.isArray(arrNum14));
 // 15. splice – позволяет удалять и вставлять элементы массива, и мутирует исходный массив
 // https://youtu.be/ZcLGyy0YFwk?t=2274
 // https://youtu.be/xEFeiKULMKs?t=883
+// https://youtu.be/GULFKAX0nxY?t=628
 const arrExample15 = [1,0,74,'string',{id: 1, name:'Alex'},{id: 2, name:'Dima'},null,undefined,false,true,() => {},{},[1,2,3,4],new Map()];
 
 const strArr = ['Number', 'text', 'Pop'];
@@ -481,9 +497,9 @@ console.log(arrExample152);
 // [1,0,74,'string',{id: 1, name:'Alex'}]
 //-------------------------------------------------------------------------
 
-
 // 16. slice – позволяет вернуть новый подмассив из переданного
 // https://youtu.be/ZcLGyy0YFwk?t=2442
+// https://youtu.be/GULFKAX0nxY?t=800
 const arrNum16 = [1,2,3,4,5];
 
 arrNum16.slice(1, 3);
@@ -522,6 +538,7 @@ console.log(newArr164);
 
 // 17. indexOf – возвращает индекс массива
 // https://youtu.be/ZcLGyy0YFwk?t=2639
+// https://youtu.be/GULFKAX0nxY?t=977
 const arrNum17 = [1,2,3,4,5];
 
 const foundID171 = arrNum17.indexOf(3);
@@ -548,6 +565,8 @@ console.log(foundID173);
 //-------------------------------------------------------------------------
 
 // 18. lastIndexOf – возвращает индекс массива, но поиск с конца к началу массива
+// https://youtu.be/ZcLGyy0YFwk?t=2738
+// https://youtu.be/GULFKAX0nxY?t=977
 const arrNum18 = [1,2,3,4,5];
 
 const foundID181 = arrNum18.lastIndexOf(5);
@@ -568,6 +587,7 @@ console.log(foundID182);
 // 19. includes – позволяет проверить содержится ли какое-то значение в массиве, и возвращает boolean значение true/false
 // https://youtu.be/ZcLGyy0YFwk?t=2809
 // https://youtu.be/xEFeiKULMKs?t=261
+// https://youtu.be/GULFKAX0nxY?t=977
 // Второй параметр указывает с какого индекса искать
 const arrExample191 = [1,0,74,'string',{id: 1, name:'Alex'},{id: 2, name:'Dima'},null,undefined,false,true,() => {},{},[1,2,3,4],new Map()];
 
@@ -629,6 +649,7 @@ console.log(checkArr195);
 
 // 20. reverse – переворачивает массив
 // https://youtu.be/ZcLGyy0YFwk?t=2936
+// https://youtu.be/GULFKAX0nxY?t=1499
 const arrNum20 = [1,2,3,4,5];
 
 const reverseArr20 = arrNum20.reverse();
