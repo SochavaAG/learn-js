@@ -1,4 +1,5 @@
 // Создается масссив
+// https://youtu.be/GULFKAX0nxY?t=25
 let arrOld = new Array(); // используется редко
 let arrNew = [];
 let arr = [
