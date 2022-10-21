@@ -153,4 +153,22 @@ arrNum10.sort((arg101, arg102) => arg101 - arg102);
 // реверс
 arrNum10.sort((arg101, arg102) => arg102 - arg101);
 
-// 11.
+// 11. Упрощенную запись преобразуем в читаемый код
+const agNumArr11 = [1,2,3,4,5];
+
+// Запись в одну строку
+const agResult111 = agNumArr11.reduce((agAcc1, agItem1) => (agAcc1._ += agItem1, agAcc1), {_: 5})._;
+
+// Развернутый, читаемы код
+const agResult112 = agNumArr11.reduce((agAcc1, agItem1) => {
+  agAcc1.agKey += agItem1;
+  
+  return agAcc1;
+  /*
+  (agAcc1._ += agItem1, agAcc1)
+  тоже самое как две строки ниже:
+  agAcc1.agKey += agItem1;
+  return agAcc1;
+
+  */
+}, {agKey: 5}).agKey;

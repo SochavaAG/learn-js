@@ -103,9 +103,9 @@ console.log(newResult2);
 const arrNum3 = [1,2,3,4,5];
 
 const something = arrNum3.reduce((acc3, agItem3, agIndex3, agArr3) => {
-    acc3[agIndex3] = agItem3;
+  acc3[agIndex3] = agItem3;
 
-return acc3;
+  return acc3;
 }, {});
 
 console.log(something);
